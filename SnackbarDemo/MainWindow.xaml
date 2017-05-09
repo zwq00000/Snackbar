@@ -9,9 +9,8 @@
         Width="525"
         Height="525"
         Activated="Window_Activated"
-        Background="{DynamicResource MaterialDesignPaper}"
         Deactivated="Window_Deactivated"
-        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+
         mc:Ignorable="d">
     <Window.Resources>
         <ResourceDictionary Source="pack://application:,,,/Snackbar;component/Themes/Snackbar.xaml" />
@@ -26,12 +25,10 @@
                                TextAlignment="Center"
                                TextWrapping="Wrap" />
                     <TextBox Margin="8"
-                             materialDesign:HintAssist.Hint="Content"
                              Text="{Binding Content,
                                             ElementName=Snackbar,
                                             UpdateSourceTrigger=PropertyChanged}" />
                     <TextBox Margin="8"
-                             materialDesign:HintAssist.Hint="ActionLabel"
                              Text="{Binding ActionLabel,
                                             ElementName=Snackbar,
                                             UpdateSourceTrigger=PropertyChanged}" />
@@ -65,11 +62,9 @@
                                    TextWrapping="Wrap" />
                         <TextBox x:Name="MessageTextBox"
                                  Margin="8"
-                                 materialDesign:HintAssist.Hint="Message"
                                  Text="Hello World!" />
                         <TextBox x:Name="ActionTextBox"
                                  Margin="8"
-                                 materialDesign:HintAssist.Hint="Action"
                                  Text="HELLO" />
                         <Button Margin="8"
                                 HorizontalAlignment="Center"
