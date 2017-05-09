@@ -1,3 +1,4 @@
 language: csharp
 solution: Snackbar.sln
-script: make build
+script:
+  - xbuild ./Snackbar.sln
