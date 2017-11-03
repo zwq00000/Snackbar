@@ -1,3 +1,7 @@
 language: csharp
 solution: Snackbar.sln
-script: make build
+mono: none
+dotnet: 1.0.3
+dist: trusty
+script:
+ - xbuild /p:Configuration=Release solution-name.sln
